@@ -1,0 +1,124 @@
+.add-popup__overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: visibility 0.5s linear, opacity 0.5s linear;
+  transition: visibility 0.5s linear, opacity 0.5s linear;
+  opacity: 0;
+}
+
+.add-popup__overlay_visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.add-popup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 400px;
+  height: 300px;
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+
+.add-popup__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 50%;
+  padding: 10px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.add-popup__input-container {
+  width: 100%;
+}
+
+.add-popup__input {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.add-popup__input-error {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: normal;
+  color: #ff0000;
+  -webkit-font-smoothing: antialiased;
+  font-size: 12px;
+  line-height: 17px;
+}
+
+.add-popup__submin-button {
+  min-height: 35px;
+  margin: 10px auto;
+  width: 150px;
+  background-color: #999999;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: normal;
+  color: #000000;
+  -webkit-font-smoothing: antialiased;
+  font-size: 17px;
+  line-height: 23px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  -webkit-transition: opacity 0.5s linear;
+  transition: opacity 0.5s linear;
+}
+
+.add-popup__submin-button:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.add-popup__submin-button_disabled {
+  background-color: #f77777;
+  -webkit-transition: none !important;
+  transition: none !important;
+}
+
+.add-popup__submin-button_disabled {
+  opacity: 1 !important;
+  cursor: default !important;
+}

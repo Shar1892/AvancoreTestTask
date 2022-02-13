@@ -1,0 +1,76 @@
+@import '../../SCSSConstants/mixins.scss';
+
+.add-popup__overlay {
+	@include displayFlexView(row, center, center);
+	visibility: hidden;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	transition: visibility 0.5s linear, opacity 0.5s linear;
+	opacity: 0;
+}
+
+.add-popup__overlay_visible {
+	visibility: visible;
+	opacity: 1;
+}
+
+.add-popup {
+	@include displayFlexView(column, flex-start, center);
+	width: 400px;
+	height: 300px;
+	border-radius: 15px;
+	background-color: #ffffff;
+}
+
+.add-popup__form {
+	@include displayFlexView(column, space-between, center);
+	width: 100%;
+	height: 50%;
+	padding: 10px 30px;
+	box-sizing: border-box;
+}
+
+.add-popup__input-container {
+	width: 100%;
+}
+
+.add-popup__input {
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+.add-popup__input-error {
+	margin: 0;
+	@include fontStyle(normal, #ff0000, 12px, 17px);
+}
+
+.add-popup__submin-button {
+	min-height: 35px;
+	margin: 10px auto;
+	width: 150px;
+	background-color: #999999;
+	@include fontStyle(normal, #000000, 17px, 23px);
+	border-radius: 8px;
+	border: none;
+	outline: none;
+	transition: opacity 0.5s linear;
+}
+
+.add-popup__submin-button:hover {
+	opacity: 0.6;
+	cursor: pointer;
+}
+
+.add-popup__submin-button_disabled {
+	background-color: #f77777;
+	transition: none !important;
+}
+
+.add-popup__submin-button_disabled {
+	opacity: 1 !important;
+	cursor: default !important;
+}

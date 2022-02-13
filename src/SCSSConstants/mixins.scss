@@ -1,0 +1,15 @@
+@mixin displayFlexView($flexDirection, $justifyContent, $alignItems) {
+	display: flex;
+	flex-direction: $flexDirection;
+	justify-content: $justifyContent;
+	align-items: $alignItems;
+}
+
+@mixin fontStyle($fontWeight, $color, $fontSize, $lineHeight) {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-weight: $fontWeight;
+	color: $color;
+	-webkit-font-smoothing: antialiased;
+	font-size: $fontSize;
+	line-height: $lineHeight;
+}

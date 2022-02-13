@@ -1,0 +1,30 @@
+@import '../../SCSSConstants/mixins.scss';
+
+.record {
+	width: 80%;
+	height: 60px;
+	@include displayFlexView(row, flex-start, center);
+	margin: auto;
+}
+
+.record__radio-input {
+	cursor: pointer;
+}
+
+.record__description-container {
+	margin-left: 10px;
+	padding: 5px 5px 5px 10px;
+	border: #000000 2px solid;
+	border-radius: 5px;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+.record__description-container_selected {
+	background-color: #999999;
+}
+
+.record__description {
+	margin: 0;
+	@include fontStyle(normal, #000000, 17px, 23px);
+}
