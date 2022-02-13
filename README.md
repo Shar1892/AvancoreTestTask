@@ -1,3 +1,5 @@
+Реализовано: получение списка записей из json; вывод списка; выбор записи через селект, отметкой радио-баттона, кликом по записи; сортировку записей по алфавиту; добавление новой записи.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
